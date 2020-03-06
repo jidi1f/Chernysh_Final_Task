@@ -1,0 +1,148 @@
+.breadcrumb p{
+    font-size: 1em;
+    font-weight: bold;  
+    margin: 30px 0 25px 0;
+    cursor: pointer;
+}
+
+.outer-container{
+    overflow: hidden;
+}
+
+.thumbnail-container{
+    display:flex;
+    flex-direction: column;
+    width: 55%;
+    position: relative;
+    margin-right:20px;
+    max-width: 590px;
+}
+
+.thumbnail-container img{
+    width: 100%;
+}
+
+.thumbnail-container__thumbnails{
+    display:flex;
+    width: 100%;
+    min-height: 1px;
+    min-width: 1px;
+}
+
+.thumbnail-container__current-thumbnail{
+    min-height: 1px;
+}
+
+section:nth-child(1){
+    margin: 60px 0 100px 0; 
+}
+
+.active-item{
+    border: 1px solid #e5e5e5;
+}
+
+.item-detail-container{
+    display:flex;
+    justify-content: space-between;
+    position:relative;
+    
+}
+
+.item-detail-container .has-new{
+    display: none;
+}
+
+.extra-mile .has-new{
+    display:block;
+}
+
+.item-description__options-container li{
+    cursor:pointer;
+}
+
+.item-description{
+    position: relative;
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-description__item-material{
+   font-family: 'Times New Roman', sans-serif;
+   color:#585858;
+   max-width: 300px;
+}
+
+.item-description__item-value{
+    margin: 50px 0 35px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size:2em;
+}
+
+.item-description ul li{
+    padding: 10px 15px 10px 15px;
+    margin-left: 30px;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.item-description ul{
+    display:flex;
+    margin-left: 30px;
+}
+
+.item-description__options-container{
+    display:flex;
+    align-items: center;
+}
+
+.marg{
+    margin-bottom: 30px;
+}
+
+.item-description .button-add{
+     margin: 0 auto;
+}
+
+.thumbnail-container__thumbnails .wrap-for-overlay{
+    position:relative;
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.extra-mile .thumbnail-container__thumbnails .wrap-for-overlay{
+    position:relative;
+    flex: none;
+    min-width: 0;
+}
+
+
+.thumbnail-container__thumbnails .wrap-for-overlay .item-overlay{
+    display: none;
+    opacity: 0.6;
+    z-index: 5;
+    background-color:black;
+}
+
+/*--------------
+
+EXtra mile styles
+
+---------------*/
+
+.extra-mile .thumbnail-container{
+   flex-direction: row;
+}
+
+.extra-mile .thumbnail-container__current-thumbnail{
+    width: 75%;   
+}
+
+.extra-mile .thumbnail-container__thumbnails{
+    flex-direction: column;  
+    width: 25%;
+    min-height: 1px;
+    min-width: 1px;
+}
+
+
